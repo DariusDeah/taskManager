@@ -1,1 +1,8 @@
 /* BASIC STYLES HERE */
+.card {
+  height: 60vh;
+}
+
+.fas {
+  cursor: pointer;
+}
