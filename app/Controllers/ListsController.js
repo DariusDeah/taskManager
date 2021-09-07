@@ -1,4 +1,5 @@
 import { ProxyState } from "../AppState.js";
+import { List } from "../Models/List.js";
 import { listsService } from "../Services/ListsService.js";
 
 
@@ -31,5 +32,10 @@ export class ListsController{
     }
     listsService.createList(listItemData)
     form.reset()
+  }
+
+  deleteList() {
+     listsService.deleteList()
+
   }
 }

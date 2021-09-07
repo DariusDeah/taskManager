@@ -3,7 +3,7 @@ import { TasksController } from "./Controllers/TasksController.js";
 
 class App {
   listsController = new ListsController();
-  tasksController = new TasksController
+  tasksController = new TasksController();
 }
 
 window["app"] = new App();

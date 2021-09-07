@@ -1,3 +1,4 @@
+import { Task } from "../Models/Task.js"
 import { tasksService } from "../Services/TasksService.js"
 
 export class TasksController{
@@ -10,11 +11,12 @@ export class TasksController{
     
     let taskData = {
       name: form.taskName.value,
-      listItemid: listItemId
+      listItemId: listItemId
     }
-    console.log('yee from tk contoller')
     tasksService.createTask(taskData)
+    console.log(taskData,Task.id)
   }
+ 
 
 }
 

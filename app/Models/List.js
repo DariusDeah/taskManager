@@ -1,3 +1,4 @@
+import { ProxyState } from "../AppState.js";
 import {generateId} from "../Utils/generateId.js"
 
 export class List{
@@ -26,4 +27,11 @@ export class List{
   </div>
  </div>
 `}
+  
+  get Tasks() {
+    let template = ''
+    let addedTask = ProxyState.tasks.filter(t => t.id == this.id)
+    console.log('task', addedTask)
+    return template
+  }
 }

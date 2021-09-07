@@ -12,6 +12,7 @@ class TasksService{
   createTask(taskData) {
     ProxyState.tasks = [...ProxyState.tasks,new Task(taskData)]
   }
+  
 }
 
 export const tasksService = new TasksService
